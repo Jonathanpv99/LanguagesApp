@@ -18,6 +18,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
+import com.achojkisoft.languagesapp.languages.LanguagesView
 import com.achojkisoft.languagesapp.ui.theme.LanguagesAppTheme
 
 class MainActivity : ComponentActivity() {
@@ -28,7 +29,8 @@ class MainActivity : ComponentActivity() {
             LanguagesAppTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     Surface (modifier = Modifier.fillMaxSize().systemBarsPadding()) {
-                        Greeting()
+                        //Greeting()
+                        LanguagesView()
                     }
                 }
             }
@@ -43,6 +45,7 @@ fun Greeting() {
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
+        //obtenemos los valores de los idiomas desde los strings
         Text(
             text = stringResource(id = R.string.title),
             fontWeight = FontWeight.Bold
