@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name" translatable="false">LanguagesApp</string>
+    <string name="title">Hello World</string>
+    <string name="subtitle">The world iis yours</string>
+</resources>
